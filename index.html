@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="table.css" rel="stylesheet" />
+  <script src="https://code.angularjs.org/1.4.9/angular.js"></script>
+  <script src="table_directive.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+  <p>Hello {{name}}!</p>
+  <ng-include src="'table.tpl.html'"></ng-include>
+  <hr />
+  <table scrollable-table theaders="[{width:'50px',data:'th1'},{width:'*',data:'th2'},{width:'50px',data:'th3'}]">
+    <!--tbody-->
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>to</td>
+      <td>tre</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>to</td>
+      <td>tre</td>
+    </tr>
+    <!--/tbody-->
+  </table>
+</body>
+
+</html>

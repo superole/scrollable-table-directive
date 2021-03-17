@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+div.table-container {
+    height: 100px;
+    padding-top: 33px;
+    position: relative;
+    border: 1px solid blue;
+}
+div.table-scroll {
+    height: 100%;
+    overflow-y: scroll;
+    top: -10px;
+}
+div.table-scroll thead {
+    display: table;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+th, td {
+    height: 30px;
+}
+ th, td {
+    border: 1px solid blue;
+    border-top: 0;
+    border-left: 0;
+}
+th:last-child, td:last-child{
+    border-right: 0;
+}
+tr:last-child>td {
+    border-bottom: 0;
+}
